@@ -658,15 +658,49 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../images/blur_edges.png) ;
+    /* Shift the background image by 100px to the right */
+    background-position: 300px 0 ;
+    backdrop-filter: blur(5px);
+  /* background-image: url(../images/banner-bg.png); */
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  /* background-position: right top; */
+  z-index: 2;
+}
+
+.header-image{ 
+    /* background: linear-gradient(90deg, #363B7F 0%, rgba(54, 59, 127, 0.85) 31.00%, rgba(54, 59, 127, 0.25) 75%, rgba(54, 59, 127, 0.00) 100%); */
+    background: linear-gradient(90deg, rgb(180, 93, 44) 0%, rgb(169, 98, 57, 0.85) 31.00%, rgb(222, 123, 65, 0.25) 75%, rgba(241,85,106,0.00) 100%);
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.app-image{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    /* min-height: 500px; */
+    background-image: url(../images/app-crop.png) ;
+    /* Shift the background image by 100px to the right */
+  /* background-image: url(../images/banner-bg.png); */
+    background-size: cover;
+    /* scale: 0.95; */
+    position: inherit;
+    /* z-index: -1; */
+    top: -100px;
+    background-repeat: no-repeat;
 }
 
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 35%;
+  margin-top: 30%;
+  margin-left: 10%;
   transform: perspective(1px) translateY(-30%) !important;
 }
 
@@ -687,7 +721,7 @@ welcome
 .welcome-area .header-text p {
   font-weight: 300;
   font-size: 17px;
-  color: #7a7a7a;
+  color: #fff;
   line-height: 30px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
