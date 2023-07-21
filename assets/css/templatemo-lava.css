@@ -179,7 +179,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #f1556a;
+  background-color: #a710e8;
 }
 
 button.main-button {
@@ -189,7 +189,7 @@ button.main-button {
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
-  background-color: #f4813f;
+  background-color: #9c33dd;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -201,7 +201,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #f1556a;
+  background-color: #6d0986;
 }
 
 
@@ -220,7 +220,7 @@ button.main-button:hover {
 
 .center-heading h2 em {
   font-style: normal;
-  color: #f4813f;
+  color: #6750ec;
 }
 
 .center-heading p {
@@ -935,8 +935,8 @@ testimonials
 }
 
 #testimonials .item .testimonial-content {
-  background: rgb(244,129,63);
-  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
+  background: rgb(140, 83, 232);
+  background: linear-gradient(145deg, rgb(168, 139, 251) 0%, rgb(126, 23, 229) 100%);
   margin-left: 60px;
   padding: 40px 30px;
   text-align: center;
@@ -1042,7 +1042,7 @@ footer
 footer {
   margin-top: 200px;
   padding-top: 120px;
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/swish.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
