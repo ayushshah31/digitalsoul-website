@@ -229,6 +229,18 @@ button.main-button:hover {
   text-align: center;
 }
 
+.searching{
+    margin-top: 50px;
+}
+.searching p{
+    font-size: 20px;
+    color: #151515;
+    text-align: center;
+}
+
+.image-container {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 /* 
 ---------------------------------------------
@@ -658,12 +670,12 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  background-image: url(../images/blur_edges.png) ;
+  background-image: url(../images/app-curved-1.png) ;
     /* Shift the background image by 100px to the right */
-    background-position: 300px 0 ;
+    background-position-x: 105%;
     backdrop-filter: blur(5px);
   /* background-image: url(../images/banner-bg.png); */
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   /* background-position: right top; */
   z-index: 2;
@@ -683,7 +695,7 @@ welcome
 .app-image{
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     /* min-height: 500px; */
     background-image: url(../images/app-crop.png) ;
     /* Shift the background image by 100px to the right */
@@ -699,14 +711,14 @@ welcome
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 30%;
+  margin-top: 18%;
   margin-left: 10%;
   transform: perspective(1px) translateY(-30%) !important;
 }
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size: 60px;
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -720,7 +732,7 @@ welcome
 
 .welcome-area .header-text p {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 22px;
   color: #fff;
   line-height: 30px;
   letter-spacing: 0.25px;
@@ -774,6 +786,21 @@ welcome
   }
 }
 
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box img{
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    scale: auto;
+}
+
 /*
 ---------------------------------------------
 about
@@ -794,7 +821,7 @@ about
 
 .features-item {
   border-radius: 5px;
-  padding: 60px 30px;
+  padding: 30px 30px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
@@ -813,7 +840,7 @@ about
   z-index: 10;
   position: relative;
   max-width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .features-item h4 {
@@ -935,7 +962,7 @@ testimonials
 #testimonials .item .testimonial-content p {
   color: #fff;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 400;
   margin: 20px 0px 15px 0px;
 }
 
