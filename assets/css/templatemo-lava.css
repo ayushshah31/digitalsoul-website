@@ -670,68 +670,50 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  /* background-image: url(../images/app-curved-1.png); */
+  background-image: url(../images/welcome-bg.png) ;
   background-size: contain;
-  /* background-blend-mode: ; */
+  background-color: #363b7f;
     /* Shift the background image by 100px to the right */
-  background-position-x: 100%;
-  backdrop-filter: blur(5px);
+    background-position-x: 105%;
+    backdrop-filter: blur(5px);
   /* background-image: url(../images/banner-bg.png); */
   /* background-size: cover; */
   background-repeat: no-repeat;
   /* background-position: right top; */
-  z-index: 5;
+  z-index: 2;
 }
 
-.welcome-area img{
-    right: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.header-image{ 
+ .header-image{ 
     /* background: linear-gradient(90deg, #363B7F 0%, rgba(54, 59, 127, 0.85) 31.00%, rgba(54, 59, 127, 0.25) 75%, rgba(54, 59, 127, 0.00) 100%); */
-    /* background: linear-gradient(90deg, #9c8fe5 0%, #b8b0e5 31.00%, rgb(222, 123, 65, 0.25) 75%, rgba(241,85,106,0.00) 100%); */
-    background-color: #363B7F;
+    /* background: linear-gradient(90deg, rgb(180, 93, 44) 0%, rgb(169, 98, 57, 0.85) 31.00%, rgb(222, 123, 65, 0.25) 75%, rgba(241,85,106,0.00) 100%);
     background-size: auto;
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 2; */
 }
 
-.app-image{
-    /* position: relative; */
-    /* width: 100%;
-    height: 100%; */
-    /* padding-left: 100px; */
-    /* padding-right: auto; */
+/* .app-image{
+    position: relative;
+    width: 100%;
+    height: 1300px;
     /* min-height: 500px; */
-    /* background-image: url(../images/app-crop.png) ; */
+   /* background-image: url(../images/app-crop.png) ;
     /* Shift the background image by 100px to the right */
   /* background-image: url(../images/banner-bg.png); */
+    /* background-size: cover;
     /* scale: 0.95; */
-    /* position: inherit; */
+    /*position: inherit;
     /* z-index: -1; */
-    /* top: -100px; */
-    background-color: #9083b1;
-}
-
-.app-image img{
-    max-width: 100%;
-    height: 100%;
-    /* center image */
-    position: relative;
-    left: 15%;
-    right: 15%;
-}
+    /*top: -100px;
+    /*background-repeat: no-repeat;
+} */
 
 .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
-  margin-top: 18%;
+  margin-top: 25%;
   margin-left: 10%;
   transform: perspective(1px) translateY(-30%) !important;
 }
@@ -769,21 +751,43 @@ welcome
 
 @media (max-width: 1320px) {
   .welcome-area .header-text .left-text {
-    margin-top: 50%;
+    margin-top: 30%;
   }
   .welcome-area .header-text {
-    width: 50%;
+    width: 80%;
     margin-left: 5%;
   }
 }
 
 @media (max-width: 1140px) {
-  .welcome-area {
-    height: auto;
+.welcome-area {
+    height: 200px;
+    background-size: 70%;
+    /* background-image: none; */
   }
   .welcome-area .header-text {       
-    width: 92%;
-    padding-top: 793px;
+    width: auto;
+    padding-top: -100px !important;
+    margin-left: -50px;
+    /* padding-top: 793px; */
+  }
+  .welcome-area .header-text .left-text {
+    margin-top: 5%;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 995px) {
+  .welcome-area {
+    height: 250px;
+    background-size: 70%;
+    /* background-image: none; */
+  }
+  .welcome-area .header-text {       
+    width: 80%;
+    padding-top: 100px !important;
+    margin-left: -50px;
+    /* padding-top: 793px; */
   }
   .welcome-area .header-text .left-text {
     margin-top: 5%;
@@ -792,7 +796,9 @@ welcome
 }
 @media (max-width: 810px) {
   .welcome-area {
-    background-size: contain;
+    background-image: none;
+    background: linear-gradient(90deg, #363B7F 0%, rgba(54, 59, 127, 0.85) 31.00%, rgba(54, 59, 127, 0.70) 85%, rgba(54, 59, 127, 0.50) 100%);
+    height: auto;
   }
 
   .welcome-area .header-text {
@@ -804,6 +810,12 @@ welcome
     margin-right: 0px;
     padding-right: 0px;
   }
+}
+
+@media (max-width: 410px) {
+    .welcome-area h1{
+        font-size: 3em !important;
+    }
 }
 
 
