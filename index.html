@@ -44,6 +44,9 @@ https://templatemo.com/tm-540-lava-landing-page
       height: auto; /* Maintain the video's aspect ratio */
       display: block; /* Ensures proper spacing and alignment */
     }
+        .custom-input {
+            display: none;
+        }
   </style>
 
     <!-- Additional CSS Files -->
@@ -100,6 +103,7 @@ https://templatemo.com/tm-540-lava-landing-page
                                 </ul>
                             </li> -->
                             <li class="scroll-to-section"><a href="#contact-us" >Contact Us</a></li>
+                            <li class="scroll-to-section"><a target="_blank" href="https://digitalsoulmclean.com/privacyPolicy" >Privacy POlicy</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -124,10 +128,10 @@ https://templatemo.com/tm-540-lava-landing-page
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1>DigitalSoul</h1>
                         <p>DigitalSoul is a <strong class="font-weight-bold" style="color: #00b7ff;">gamified</strong>, <strong class="font-weight-bold" style="color: #00b7ff;">culturally sensitive</strong>, <strong class="font-weight-bold" style="color: #00b7ff;">spirituality-integrated</strong>, mental health app designed for research and clinical use in acute inpatient settings at Harvard's Mclean Hospital.</p> 
-                        <p>Interested in learning more, trying out, or contributing to
-                        <strong class="font-weight-bold" style="color: #00b7ff;">DigitalSoul?</strong>
+                        <p style="color: #00b7ff;">Interested in learning more, trying out, or contributing to
+                        <strong class="font-weight-bold" style="color: #fbfdfe;">DigitalSoul?</strong>
                     </p>
-                        <a href="#about" class="main-button-slider">CONTACT US</a>
+                        <a href="#contact" class="main-button-slider">CONTACT US</a>
                     </div>
                 </div>
             </div>
@@ -254,15 +258,15 @@ https://templatemo.com/tm-540-lava-landing-page
                                   </div>
                                 <div class="col-lg-6" >
                                     <figure>
-                                        <figcaption>Apple Device <i class="fa fa-apple"></i></figcaption>
+                                        <figcaption>IOS Devices <i class="fa fa-apple"></i></figcaption>
                                         <img src="assets/images/Apple2.jpg" alt="gif">
                                     </figure>
                                 </div>
                                 <!-- <i class="fa-solid fa-arrows-left-right"></i> -->
                                 <div class="col-lg-6" >
                                     <figure>
-                                        <figcaption>Android Device <i class="fa fa-android"></i></figcaption>
-                                        <img src="assets/images/AndroidDevices.png" alt="gif">
+                                        <figcaption>Android Devices <i class="fa fa-android"></i></figcaption>
+                                        <img src="assets/images/and.png" alt="gif">
                                     </figure>
                                 </div>
                             </div>
@@ -462,9 +466,11 @@ https://templatemo.com/tm-540-lava-landing-page
             <div class="footer-content">
                 <div class="row">
                     <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="contact-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="https://formsubmit.co/Digitalsoulstudy@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="New submission!">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
@@ -474,16 +480,58 @@ https://templatemo.com/tm-540-lava-landing-page
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                            <input name="email" type="email" id="email" placeholder="E-Mail Address"
                                                 required="" style="background-color: rgba(250,250,250,0.3);">
                                         </fieldset>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <label for="industry" style="text-align: left; background-color: rgba(250,250,250,0.3); padding: 14px 20px;">Industry :</label>
+                                            <select id="industry" name="industry" onchange="handleOtherOption()" style=" background-color: rgba(250,250,250,0.3);" required>
+                                                <option value="" disabled selected>Select an option</option>
+                                                <option value="Academia">Academia</option>
+                                                <option value="News">News</option>
+                                                <option value="Hospital">Hospital</option>
+                                                <option value="Commerce/Finance">Commerce/Finance</option>
+                                                <option value="Charity">Charity</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <br>
+                                            <br>
+                                            <input type="text" id="otherInput" class="custom-input" placeholder="Enter your Industry" style="text-align: center;" style="background-color: rgba(250,250,250,0.3);">
+                                            <br>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <label for="purpose" style="text-align: left; background-color: rgba(250,250,250,0.3); padding: 14px 20px;" >Purpose :</label>
+                                        <select id="purpose" name="purpose" onchange="handleOtherPurpose()" style= "background-color: rgba(250,250,250,0.3);" required>
+                                            <option value="" disabled selected>Select an option</option>
+                                            <option value="media or guest appearance request">media or guest appearance request</option>
+                                            <option value="Interested in a research collaboration">Interested in a research collaboration</option>
+                                            <option value="Interested in donating or investing to expand DigitalSoul">Interested in donating or investing to expand DigitalSoul</option>
+                                            <option value="Interested in using DigitalSoul at your residential facility">Interested in using DigitalSoul at your residential facility</option>
+                                            <option value="Interested in developing a new app with the DigitalSoul team">Interested in developing a new app with the DigitalSoul team</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <br>
+                                        <br>
+                                        <input type="text" id="otherPurpose" class="custom-input" placeholder="Enter your purpose" style="text-align: center;" style="background-color: rgba(250,250,250,0.3);">
+                                        <br>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="Organization name" type="text" id="org" placeholder="Organization Name" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                             
                                     <div class="col-lg-12">
                                         <fieldset>
                                             <textarea name="message" rows="6" id="message" placeholder="Your Message"
                                                 required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
                                         </fieldset>
                                     </div>
+                                    <input type="hidden" id="subject" name="_subject" value="New Inquiry for DigitalSoul">
                                     <div class="col-lg-12">
                                         <fieldset>
                                             <button type="submit" id="form-submit" class="main-button">Send Message
@@ -494,30 +542,11 @@ https://templatemo.com/tm-540-lava-landing-page
                             </form>
                         </div>
                     </div>
-                    <!-- ***** Contact Form End ***** -->
-                    <!-- <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>Lava</em></h2>
-                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
-                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
-                            <br><br>If you need this contact form to send email to your inbox, you may follow our <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> page
-                            for more detail.</p>
-                        <ul class="social">
-                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="sub-footer">
-                        <p>Copyright &copy; 2023
-
-                        | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+                        <p>&copy; 2023 McLean Hospital, Spirituality & Mental Health Laboratory. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -540,6 +569,43 @@ https://templatemo.com/tm-540-lava-landing-page
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        function handleOtherOption() {
+            const industrySelect = document.getElementById("industry");
+            const otherInput = document.getElementById("otherInput");
+    
+            if (industrySelect.value === "other") {
+                otherInput.style.display = "inline-block";
+            } else {
+                otherInput.style.display = "none";
+            }
+        }
+        function handleOtherPurpose() {
+            const purposeSelect = document.getElementById("purpose");
+            const otherPurpose = document.getElementById("otherPurpose");
+    
+            if (purposeSelect.value === "other") {
+                otherPurpose.style.display = "inline-block";
+            } else {
+                otherPurpose.style.display = "none";
+            }
+        }
+        function submitForm(event) {
+        event.preventDefault(); // Prevent the form from submitting immediately
+
+        // Get the selected values from the form
+        const industry = document.getElementById("industry").value;
+        const organization = document.getElementById("org").value;
+        const purpose = document.getElementById("purpose").value;
+        const name = document.getElementById("name").value;
+
+        // Create the subject line
+        const subjectLine = `${industry}_${organization}_${purpose}_${name}`;
+
+        // Set the subject line value to the "subject" input field
+        document.getElementById("subject").value = subjectLine;
+        }
+    </script>
 
 </body>
 </html>
