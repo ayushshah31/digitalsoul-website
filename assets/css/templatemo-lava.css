@@ -144,12 +144,12 @@ body {
 }
 
 a.main-button-slider {
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 25px;
-  padding: 15px 25px;
-  background-color: #00b7ff;
+  padding: 14px 33px;
+  background-color: #ffc107;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease 0s;
@@ -670,7 +670,7 @@ welcome
   width: 100%;
   height: 100vh;
   min-height: 793px;
-  background-image: url(../images/welcome-bg.png) ;
+  background-image: url(../images/welcome-bg2.png) ;
   background-size: contain;
   background-color: #363b7f;
     /* Shift the background image by 100px to the right */
@@ -855,7 +855,7 @@ about
   border-radius: 5px;
   padding: 30px 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
 }
 
 .features-item h2 {
@@ -1093,7 +1093,7 @@ footer .footer-content {
 .contact-form {
   position: relative;
   z-index: 10;
-  padding: 45px;
+  padding: 22px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -1107,8 +1107,8 @@ footer .right-content {
 .contact-form input,
 .contact-form textarea,
 .contact-form label {
-  color: #777;
-  font-size: 13px;
+  color: #403f3f;
+  font-size: 16px;
   border: 1px solid #eee;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -1122,9 +1122,15 @@ footer .right-content {
   appearance: none; */
   margin-bottom: 30px;
 }
+.contact-form input::placeholder {
+  color: #403f3f;
+}
+.contact-form textarea::placeholder {
+  color: #403f3f;
+}
 .contact-form select {
-  color: #777;
-  font-size: 13px;
+  color: #403f3f;
+  font-size: 16px;
   border: 1px solid #eee;
   background-color: #f7f7f7;
   border-radius: 5px;
