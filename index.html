@@ -48,7 +48,9 @@ https://templatemo.com/tm-540-lava-landing-page
             display: none;
         }
         .bg-style{
-            background-color: aquamarine;
+            /* background-color: aquamarine; */
+            font-weight: 500;
+            font-size: 18px;
             color: black;
         }
   </style>
@@ -144,7 +146,7 @@ https://templatemo.com/tm-540-lava-landing-page
     </div>
     <!-- ***** Welcome Area End ***** -->
     <div class="banner">
-        <img src="assets/images/app-crop.png" alt="Banner Image">
+        <img src="assets/images/app-phones.png" alt="Banner Image">
       </div>
 
     <!-- Searching for digitalsoul -->
@@ -159,9 +161,9 @@ https://templatemo.com/tm-540-lava-landing-page
         </div>
     </section>
 
-    <div class="banner">
+    <!-- <div class="banner">
         <img src="assets/images/digitalsoul-banner.jpeg" alt="Banner Image">
-      </div>
+      </div> -->
 
     <!-- Digital Soul framework -->
     <section>
@@ -524,11 +526,11 @@ https://templatemo.com/tm-540-lava-landing-page
                     <!-- ***** Contact Form Start ***** -->
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="contact-form">
-                            <div class="center-heading searching">
-                                <h4><u>Contact Form</u></h4>
+                            <div>
+                                <h4><u>Contact Form</u></h4><br>
                                 <!-- <p><strong><u>Contact Form</u></strong></p> -->
-                                <p>Please fill out this form to send a message to DigitalSoul’s Software Engineering Manager, <strong>Sean Minns</strong>
-                                </p>
+                                <p style="color: black; font-size: 18px;">Please fill out this form to send a message to DigitalSoul’s Software Engineering Manager, <strong>Sean Minns</strong>
+                                </p><br>
                             </div>
                             <form id="contact" action="https://formsubmit.co/Digitalsoulstudy@gmail.com" method="POST">
                                 <input type="hidden" name="_captcha" value="false">
@@ -548,9 +550,9 @@ https://templatemo.com/tm-540-lava-landing-page
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <fieldset>
-                                            <label for="industry" style="text-align: left; background-color: rgba(0,123,255,.25); padding: 14px 20px;">Industry :</label>
+                                            <!-- <label for="industry" style="text-align: left; background-color: rgba(0,123,255,.25); padding: 14px 20px;">Industry :</label> -->
                                             <select id="industry" name="industry" onchange="handleOtherOption()" style=" background-color: rgba(0,123,255,.25);" required>
-                                                <option value="" disabled selected>Select an option</option>
+                                                <option value="" disabled selected>Industry</option>
                                                 <option value="Academia">Academia</option>
                                                 <option value="News">News</option>
                                                 <option value="Hospital">Hospital</option>
@@ -565,9 +567,9 @@ https://templatemo.com/tm-540-lava-landing-page
                                         </fieldset>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
-                                        <label for="purpose" style="text-align: left; background-color: rgba(0,123,255,.25); padding: 14px 20px;" >Purpose :</label>
+                                        <!-- <label for="purpose" style="text-align: left; background-color: rgba(0,123,255,.25); padding: 14px 20px;" >Purpose :</label> -->
                                         <select id="purpose" name="purpose" onchange="handleOtherPurpose()" style= "background-color: rgba(0,123,255,.25);" required>
-                                            <option value="" disabled selected>Select an option</option>
+                                            <option value="" disabled selected>Purpose</option>
                                             <option value="media or guest appearance request">media or guest appearance request</option>
                                             <option value="Interested in a research collaboration">Interested in a research collaboration</option>
                                             <option value="Interested in donating or investing to expand DigitalSoul">Interested in donating or investing to expand DigitalSoul</option>
