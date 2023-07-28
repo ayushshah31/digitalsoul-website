@@ -42,3 +42,16 @@
     color: black;
     transform: rotateY(180deg);
   }
+
+  .team-card {
+    margin: 10px;
+    background: #F7F8FF;
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .team-card img {
+    max-width: 100%;
+    height: auto;
+  }
