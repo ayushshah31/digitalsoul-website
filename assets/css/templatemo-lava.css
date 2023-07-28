@@ -968,7 +968,7 @@ testimonials
 
 #testimonials .item .testimonial-content {
   background: rgb(140, 83, 232);
-  background: linear-gradient(145deg, rgb(168, 139, 251) 0%, rgb(126, 23, 229) 100%);
+  background: #F7F8FF;
   margin-left: 60px;
   padding: 40px 30px;
   text-align: center;
