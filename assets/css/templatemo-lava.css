@@ -205,9 +205,9 @@ button.main-button:hover {
 }
 
 
-.center-heading {
-  margin-bottom: 70px;
-}
+/* .center-heading {
+  margin-bottom: 10px;
+} */
 
 .center-heading h2 {
   margin-top: 0px;
@@ -230,7 +230,7 @@ button.main-button:hover {
 }
 
 .searching{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .searching p{
     font-size: 20px;
@@ -292,7 +292,7 @@ header
 .header-area .main-nav .logo {
   line-height: 80px;
   color: #363B7F;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   /* text-transform: uppercase; */
   letter-spacing: 2px;
@@ -877,10 +877,10 @@ about
 
 .features-item h4 {
   margin-top: 0px;
-  font-size: 22px;
+  font-size: 27px;
   color: #363B7F;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .features-item .main-button {
