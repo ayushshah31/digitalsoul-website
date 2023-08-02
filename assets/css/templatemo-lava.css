@@ -231,6 +231,8 @@ button.main-button:hover {
 
 .searching{
     margin-top: 20px;
+    margin-bottom: 30px;
+
 }
 .searching p{
     font-size: 20px;
@@ -668,9 +670,9 @@ welcome
 */
 .welcome-area {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 793px;
-  background-image: url(../images/welcome-bg3.png) ;
+  background-image: url(../images/welcome.png) ;
   background-size: contain;
   background-color: #363b7f;
     /* Shift the background image by 100px to the right */
@@ -750,6 +752,9 @@ welcome
 }
 
 @media (max-width: 1320px) {
+    .welcome-area{
+        height: 0;
+    }
   .welcome-area .header-text .left-text {
     margin-top: 30%;
   }
@@ -780,7 +785,8 @@ welcome
 @media (max-width: 995px) {
   .welcome-area {
     height: 250px;
-    background-size: 70%;
+    background-size: 80%;
+    background-position-y: 80px;
     /* background-image: none; */
   }
   .welcome-area .header-text {       
