@@ -53,6 +53,18 @@ https://templatemo.com/tm-540-lava-landing-page
             font-size: 18px;
             color: black;
         }
+        .MobImg {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 810px) {
+  /* Show the banner div on mobile screens */
+  .MobImg {
+    margin-top: 30px;
+    display: block;
+  }
+}
   </style>
 
     <!-- Additional CSS Files -->
@@ -142,9 +154,14 @@ https://templatemo.com/tm-540-lava-landing-page
                 </div>
             </div>
         </div>
+        <div class="banner MobImg">
+            <img src="assets/images/MobileBanner.jpg" alt="Banner Image">
+          </div>
         <!-- ***** Header Text End ***** -->
     </div>
     <!-- Searching for digitalsoul -->
+   
+
     <section>
         <div class="row">
             <div class="col-lg-8 offset-lg-2">

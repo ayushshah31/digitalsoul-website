@@ -1272,6 +1272,9 @@ footer .sub-footer p {
 }
 
 @media (max-width: 991px) {
+  .features-item img{
+    height: auto;
+  }
   footer .copyright {
     text-align: center;
   }
