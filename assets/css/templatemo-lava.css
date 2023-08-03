@@ -244,6 +244,19 @@ button.main-button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 767px) {
+  .center-heading h2 {
+    font-size: 28px;
+    /* width: 95%; */
+    /* padding: 10px; */
+  }
+  
+  .searching p{
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
 /* 
 ---------------------------------------------
 header
@@ -803,7 +816,7 @@ welcome
 @media (max-width: 810px) {
   .welcome-area {
     background-image: none;
-    background: linear-gradient(90deg, #363B7F 0%, rgba(54, 59, 127, 0.85) 31.00%, rgba(54, 59, 127, 0.70) 85%, rgba(54, 59, 127, 0.50) 100%);
+    background: linear-gradient(90deg, #363B7F 0%, rgba(54, 59, 127, 0.85) 31.00%, rgba(54, 59, 127, 0.90) 85%, rgba(54, 59, 127, 0.90) 100%);
     height: auto;
   }
 
@@ -820,7 +833,7 @@ welcome
 
 @media (max-width: 410px) {
     .welcome-area h1{
-        font-size: 3em !important;
+        font-size: 40px !important;
     }
 }
 
@@ -854,6 +867,10 @@ about
 @media (max-width: 992px) {
   .features-item {
     margin-bottom: 45px;
+  }
+
+  #about{
+    padding: 10px 0px;
   }
 }
 
