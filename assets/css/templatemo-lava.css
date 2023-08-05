@@ -494,6 +494,9 @@ header
   left: 0;
   width: 75%;
 }
+.header-area .main-nav .menu-trigger p{
+    display: block;
+}
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
@@ -581,8 +584,10 @@ header
 
 @media (max-width: 991px) {
   .logo {
-    text-align: center;
-    float: none!important;
+    text-align: left !important;
+    float: none !important;
+    position: relative;
+    right: 25%;
   }
   .header-area {
     background-color: #f7f7f7;
@@ -1076,6 +1081,12 @@ testimonials
   .owl-carousel .owl-nav {
     display: none!important;
   }
+}
+
+@media screen and (max-width: 910px) {
+    .team-card {
+      height: auto !important;
+    }
 }
 
 /* 
