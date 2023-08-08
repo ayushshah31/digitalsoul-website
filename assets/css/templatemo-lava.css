@@ -252,7 +252,7 @@ button.main-button:hover {
   }
   
   .searching p{
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px;
   }
 }
@@ -307,7 +307,7 @@ header
 .header-area .main-nav .logo {
   line-height: 80px;
   color: #363B7F;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 700;
   /* text-transform: uppercase; */
   letter-spacing: 2px;
