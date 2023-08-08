@@ -453,12 +453,24 @@ header
   top: 23px;
   width: 32px;
   height: 40px;
-  text-indent: -9999em;
+  /* text-indent: -9999em; */
   z-index: 99;
   right: 40px;
   display: none;
 }
+.header-area .main-nav p{
+    display: block;
+    position: relative;
+    bottom: 65px;
+    /* left: 43%; */
+    color: #000;
+    text-align: end;
+    padding-right: 30px;
+}
 
+.header-area .main-nav .menu-trigger span{
+    margin-top: 10px;
+}
 .header-area .main-nav .menu-trigger span,
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
